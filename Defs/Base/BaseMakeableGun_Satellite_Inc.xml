@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== BaseMakeableGun_Satellite_Inc ====================================-->
+
+    <ThingDef Name="BaseMakeableGun_Satellite_Inc" ParentName="BaseGunWithQuality" Abstract="True">
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>STL-CraftingTable</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

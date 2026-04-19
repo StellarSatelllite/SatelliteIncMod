@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[STL]Satellite Inc Mod</name>
+  <author>StellarSatellite</author>
+  <packageId>Stellar.SatelliteIncMod</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>
+[STL]Satellite Inc mod ver 0.10.1
+
+This mod adds multiple weapons, armor(WIP), and shield belts.
+
+To install this mod, you must have Astrallium Core installed.
+
+This allows the guns added by this mod to penetrate pawns, walls, and other obstacles to inflict damage.
+In addition, you can choose from several firing modes; the default is single-shot.
+However, be aware that the accuracy of the guns in this mod will vary depending on the Pawn's mood.
+Finally, and most importantly, be extremely careful not to accidentally shoot your own pawns. Bullets can penetrate pawns. Carefully manage your firing position.
+
+This mod works on its own, but installing [STL]Roren-CeleTech and Satellite Inc ShieldsBelts Patches" will allow you to equip the added shield belts to Lauren.
+Also, although it's still under development, we plan to give these items to the pawns that appear in Satellite Inc. Wolfein Race(WIP).
+
+Astrallium Core
+https://steamcommunity.com/sharedfiles/filedetails/?id=3709550384
+
+Roren-CeleTech and Satellite Inc ShieldsBelts Patches
+https://steamcommunity.com/sharedfiles/filedetails/?id=3708220495
+  </description>
+  <modDependencies>
+    <li>
+      <packageId>Stellium.Astrallium.Core</packageId>
+      <displayName>Astrallium Core</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3709550384</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Stellium.Astrallium.Core</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>Satellite_Inc_Mote_Target</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<thingClass>MoteAttached</thingClass>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+			<solidTime>0.5</solidTime>
+		</mote>
+		<graphicData>
+			<drawSize>1.5</drawSize>
+			<texPath>Things/Mote/Satellite_Inc_Target_Basic</texPath>
+			<color>(1, 1, 1, 1)</color>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+		<defName>Satellite_Inc_Mote_Final</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<thingClass>MoteAttached</thingClass>
+		<mote>
+			<fadeInTime>0</fadeInTime>
+			<fadeOutTime>0.5</fadeOutTime>
+			<solidTime>1.0</solidTime>
+		</mote>
+		<graphicData>
+			<drawSize>1.5</drawSize>
+			<texPath>Things/Mote/Satellite_Inc_Final_Basic</texPath>
+			<color>(1, 1, 1, 1)</color>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+</Defs>

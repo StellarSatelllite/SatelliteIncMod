@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   <!--==================================== STL-SR Mk.1 ====================================-->
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_STL-AMR_Mk1_dayo</defName>
+    <label>STL-AMR Mk.1 bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_SatelliteMK1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.4</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>90</damageAmountBase>
+      <armorPenetrationBase>1.2</armorPenetrationBase>
+      <speed>115</speed>
+    </projectile>
+    <thingClass>Astrallium.AstralliumBullet</thingClass>
+    <modExtensions>
+      <li Class="Astrallium.ProjectileExtension">
+        <rotateImpactMoteOnPenetration>true</rotateImpactMoteOnPenetration>
+        <moodAccuracyCurve> <!--心情ごとの命中率カーブ-->
+        <points>
+          <li>(0.0, 0.2)</li>
+          <li>(0.3, 0.6)</li>
+          <li>(0.5, 0.8)</li>
+          <li>(0.8, 0.95)</li>
+          <li>(0.9, 0.98)</li>
+          <li>(1.0, 2.0)</li>
+        </points>
+        </moodAccuracyCurve>
+        <penetratePawns>true</penetratePawns> <!--ポーンを貫通するかどうか-->
+        <penetrateFriendly>true</penetrateFriendly> <!--同じ派閥のポーンを貫通するか(貫通しない場合でも直接狙った相手はダメージを受ける)-->
+        <penetrateWalls>true</penetrateWalls> <!--壁を貫通するか-->
+        <maxPenetrations>50</maxPenetrations> <!--最大貫通数-->
+        <damageMultiplierPerPenetration>0.99</damageMultiplierPerPenetration> <!--貫通ごとのダメージ量(割合、1以上で増える、1以下で減る)-->
+        <impactMoteDef>Satellite_Inc_Mote_Target</impactMoteDef> <!--発射地点に出す演出、消すことで省略-->
+        <impactMoteScale>1.5</impactMoteScale> <!--発射地点に出す演出のサイズ、消すことで省略-->
+        <finalImpactMoteDefName>Satellite_Inc_Mote_Final</finalImpactMoteDefName>
+        <finalImpactMoteScale>2.0</finalImpactMoteScale>
+        <alwaysFreeIntercept>true</alwaysFreeIntercept> <!--発射地点に出す演出、消すことで省略-->
+        <extensionDistance>50</extensionDistance> <!--すべての物体に命中判定を適応-->
+
+        <wallHpStopThreshold>3000</wallHpStopThreshold> <!--壁を絶対に貫通しなくなる壁HPの閾値-->
+        <wallPenetrationChanceCurve> <!--HPと貫通率のカーブ、1.0で100%-->
+        <points>
+          <li>(0, 1.0)</li>
+          <li>(500, 0.99)</li>
+          <li>(1000, 0.95)</li>
+          <li>(2000, 0.90)</li>
+          <li>(3000,0.00)</li>
+        </points>
+        </wallPenetrationChanceCurve>
+
+        <wallPenetratedDamageFactor>15.0</wallPenetratedDamageFactor> <!--壁を貫通した際のダメージ量-->
+
+        <hitAllOnPath>true</hitAllOnPath> <!--射線上のすべてに命中するようにする-->
+        <hitAllOnPathRadius>0</hitAllOnPathRadius> <!--命中範囲、上の設定がtrueである必要あり-->
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMakeableGun_Satellite_Inc">
+    <defName>STL-AMR_Mk1_dayo</defName>
+    <label>STL-AMR Mk.1</label>
+    <description>Prototype anti-materiel rifle manufactured by Satellite Inc.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Weapon/STL-AMR_Mk.1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>2.0</drawSize>
+    </graphicData>
+    
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>13.6</Mass>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+    </statBases>
+    
+    <costList>
+     <ComponentSpacer>8</ComponentSpacer>
+     <Plasteel>96</Plasteel>
+     <Steel>540</Steel>
+     <ComponentIndustrial>45</ComponentIndustrial>
+    </costList>      
+
+    <verbs>
+        <li Class="Astrallium.VerbProperties_Astrallium">
+          <verbClass>Astrallium.Verb_AstralliumShoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <defaultProjectile>Bullet_STL-AMR_Mk1_dayo</defaultProjectile>
+          <burstShotCount>5</burstShotCount>
+          <ticksBetweenBurstShots>90</ticksBetweenBurstShots>
+          <warmupTime>2.0</warmupTime>
+          <range>55</range>
+          <soundCast>Shot_AssaultRifle</soundCast>
+          <soundCastTail>GunTail_Medium</soundCastTail>
+          <muzzleFlashScale>10</muzzleFlashScale>
+          <aiCanAimThroughWalls>true</aiCanAimThroughWalls> <!--敵AIが壁越し射撃をするかどうか--> 
+        </li>
+    </verbs>
+    
+    <comps>
+            <li Class="Astrallium.CompProperties_FireMode">
+                <defaultModeIndex>0</defaultModeIndex> <!--デフォルトの射撃モード、上から0,1,2,3と増えていく-->
+                <aiCheckInterval>60</aiCheckInterval> <!--AIが射撃モードを変えるか確認するインターバル-->
+                <modes>
+                    <li> <!--モードのステータス設定-->
+                        <label>Single</label>
+                        <iconPath>UI/Icons/FireMode/Single</iconPath>
+                        <verbProps Class="Astrallium.VerbProperties_Astrallium">
+                            <verbClass>Astrallium.Verb_AstralliumShoot</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_STL-AMR_Mk1_dayo</defaultProjectile>
+                            <warmupTime>2.5</warmupTime>
+                            <range>55</range>
+                            <burstShotCount>1</burstShotCount>
+                            <soundCast>Shot_AssaultRifle</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                            <aiCanAimThroughWalls>true</aiCanAimThroughWalls>
+                        </verbProps>
+                        <statOffsets> <!--省略可能-->
+                            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+                            <AimingDelayFactor>0.5</AimingDelayFactor>
+                        </statOffsets>
+                    </li>
+                    <li> <!--モードのステータス設定-->
+                        <label>Triple</label>
+                        <iconPath>UI/Icons/FireMode/Burst</iconPath>
+                        <verbProps Class="Astrallium.VerbProperties_Astrallium">
+                            <verbClass>Astrallium.Verb_AstralliumShoot</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_STL-AMR_Mk1_dayo</defaultProjectile>
+                            <warmupTime>2.5</warmupTime>
+                            <range>55</range>
+                            <burstShotCount>3</burstShotCount>
+                            <ticksBetweenBurstShots>90</ticksBetweenBurstShots>
+                            <soundCast>Shot_AssaultRifle</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                            <aiCanAimThroughWalls>true</aiCanAimThroughWalls>
+                        </verbProps>
+                        <statOffsets> <!--省略可能-->
+                            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+                            <AimingDelayFactor>-0.3</AimingDelayFactor>
+                        </statOffsets>
+                    </li>
+                    <li> <!--モードのステータス設定-->
+                        <label>FullFire</label>
+                        <iconPath>UI/Icons/FireMode/FullAuto</iconPath>
+                        <verbProps Class="Astrallium.VerbProperties_Astrallium">
+                            <verbClass>Astrallium.Verb_AstralliumShoot</verbClass>
+                            <hasStandardCommand>true</hasStandardCommand>
+                            <defaultProjectile>Bullet_STL-AMR_Mk1_dayo</defaultProjectile>
+                            <warmupTime>2.5</warmupTime>
+                            <range>55</range>
+                            <burstShotCount>6</burstShotCount>
+                            <ticksBetweenBurstShots>90</ticksBetweenBurstShots>
+                            <soundCast>Shot_AssaultRifle</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                            <aiCanAimThroughWalls>true</aiCanAimThroughWalls>
+                        </verbProps>
+                        <statOffsets> <!--省略可能-->
+                            <ShootingAccuracyPawn>-15</ShootingAccuracyPawn>
+                            <AimingDelayFactor>-0.5</AimingDelayFactor>
+                        </statOffsets>
+                    </li>
+                </modes>
+                <aiDistanceRules> <!--AIがどのモードを使うかを距離ごとに設定-->
+                    <li><maxDistance>6</maxDistance><modeIndex>2</modeIndex></li>
+                    <li><maxDistance>12</maxDistance><modeIndex>1</modeIndex></li>
+                    <li><maxDistance>999</maxDistance><modeIndex>0</modeIndex></li>
+                </aiDistanceRules>
+            </li>
+        </comps>
+
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>10</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>STL-AMR_Mk1_Resarch</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      
+    </recipeMaker>
+  </ThingDef>
+</Defs>

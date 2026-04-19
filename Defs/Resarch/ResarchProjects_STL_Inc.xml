@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== Satellite Inc ResarchTab ====================================-->
+
+    <ResearchTabDef>
+        <defName>Satellite_Inc</defName>
+        <label>Satellite Inc</label>
+    </ResearchTabDef>
+
+    <!--==================================== STL-CraftingTable ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-CraftingTable_Resarch</defName>
+        <label>STL-CraftingTable</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+         <li>Machining</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-Blade Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-Blade_Mk1_Resarch</defName>
+        <label>STL-Blade Mk.1(WIP)</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.50</researchViewY>
+        <prerequisites>
+         <li>STL-CraftingTable_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-HG Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-HG_Mk1_Resarch</defName>
+        <label>STL-HG Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+        <prerequisites>
+         <li>STL-CraftingTable_Resarch</li>
+         <li>BlowbackOperation</li>
+         <li>Gunsmithing</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-SG Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-SG_Mk1_Resarch</defName>
+        <label>STL-SG Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.50</researchViewY>
+        <prerequisites>
+         <li>STL-CraftingTable_Resarch</li>
+         <li>BlowbackOperation</li>
+         <li>Gunsmithing</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-MSR Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-MSR_Mk1_Resarch</defName>
+        <label>STL-MSR Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>2.0</researchViewY>
+        <prerequisites>
+         <li>STL-CraftingTable_Resarch</li>
+         <li>BlowbackOperation</li>
+         <li>Gunsmithing</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-MSR Mk.2 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-MSR_Mk2_Resarch</defName>
+        <label>STL-MSR Mk.2(WIP)</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+        <prerequisites>
+         <li>STL-MSR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-SR Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-SR_Mk1_Resarch</defName>
+        <label>STL-SR Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>2.50</researchViewY>
+        <prerequisites>
+         <li>STL-MSR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-SR Mk.2 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-SR_Mk2_Resarch</defName>
+        <label>STL-SR Mk.2(WIP)</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.50</researchViewY>
+        <prerequisites>
+         <li>STL-SR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+<!--==================================== STL-AMR Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-AMR_Mk1_Resarch</defName>
+        <label>STL-AMR Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>7500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+        <prerequisites>
+         <li>STL-SR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-MG Tech ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-MG_Tech_Resarch</defName>
+        <label>STL-MG Tech</label>
+        <description>.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+        <prerequisites>
+         <li>STL-MSR_Mk1_Resarch</li>
+         <li>GasOperation</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-LMG Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-LMG_Mk1_Resarch</defName>
+        <label>STL-LMG_Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>7500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+        <prerequisites>
+         <li>STL-MG_Tech_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-SMG Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-SMG_Mk1_Resarch</defName>
+        <label>STL-SMG Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+        <prerequisites>
+         <li>STL-MG_Tech_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-SMG Mk.2 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-SMG_Mk2_Resarch</defName>
+        <label>STL-SMG Mk.2(WIP)</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+        <prerequisites>
+         <li>STL-SMG_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-AR Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-AR_Mk1_Resarch</defName>
+        <label>STL-AR Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4.5</researchViewY>
+        <prerequisites>
+         <li>STL-SMG_Mk1_Resarch</li>
+         <li>PrecisionRifling</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-AR Mk.2 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-AR_Mk2_Resarch</defName>
+        <label>STL-AR Mk.2(WIP)</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>4.50</researchViewY>
+        <prerequisites>
+         <li>STL-AR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-BR Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-BR_Mk1_Resarch</defName>
+        <label>STL-BR Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>7500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+        <prerequisites>
+         <li>STL-AR_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-Shields Mk.1 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-ShieldBelt_Mk1_Resarch</defName>
+        <label>STL-Shields Mk.1</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+         <li>ShieldBelt</li>
+         <li>STL-CraftingTable_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-Shields Mk.2 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-ShieldBelt_Mk2_Resarch</defName>
+        <label>STL-Shields Mk.2</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>7500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+         <li>STL-ShieldBelt_Mk1_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!--==================================== STL-Shields Mk.3 ====================================-->
+
+    <ResearchProjectDef>
+        <tab>Satellite_Inc</tab>
+        <defName>STL-ShieldBelt_Mk3_Resarch</defName>
+        <label>STL-Shields Mk.3</label>
+        <description>Enabling manufacturing</description>
+        <baseCost>25000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+        <prerequisites>
+         <li>STL-ShieldBelt_Mk2_Resarch</li>
+        </prerequisites>
+    </ResearchProjectDef>
+</Defs>
