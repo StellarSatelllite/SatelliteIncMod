@@ -31,7 +31,7 @@
         </points>
         </moodAccuracyCurve>
         <penetratePawns>true</penetratePawns> <!--ポーンを貫通するかどうか-->
-        <penetrateFriendly>true</penetrateFriendly> <!--同じ派閥のポーンを貫通するか(貫通しない場合でも直接狙った相手はダメージを受ける)-->
+        <penetrateFriendly>false</penetrateFriendly> <!--同じ派閥のポーンを貫通するか(貫通しない場合でも直接狙った相手はダメージを受ける)-->
         <penetrateWalls>true</penetrateWalls> <!--壁を貫通するか-->
         <maxPenetrations>5</maxPenetrations> <!--最大貫通数-->
         <damageMultiplierPerPenetration>0.5</damageMultiplierPerPenetration> <!--貫通ごとのダメージ量(割合、1以上で増える、1以下で減る)-->
@@ -70,6 +70,10 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.0</drawSize>
     </graphicData>
+
+    <weaponTags Inherit="false">
+      <li>STL-SMG_Mk1_dayo</li>
+    </weaponTags>
     
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
@@ -95,7 +99,7 @@
           <verbClass>Astrallium.Verb_AstralliumShoot</verbClass>
           <hasStandardCommand>true</hasStandardCommand>
           <defaultProjectile>Bullet_STL-SMG_Mk1_dayo</defaultProjectile>
-          <burstShotCount>17</burstShotCount>
+          <burstShotCount>1</burstShotCount>
           <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
           <warmupTime>1.0</warmupTime>
           <range>28</range>

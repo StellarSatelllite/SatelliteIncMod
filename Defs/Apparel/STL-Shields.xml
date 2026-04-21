@@ -88,8 +88,15 @@
       </options>
     </colorGenerator>
     <comps>
-      <li Class="CompProperties_Shield">
-        <blocksRangedWeapons>false</blocksRangedWeapons>
+      <li Class="Astrallium.CompProperties_AstralShield">
+        <blocksEMP>true</blocksEMP>
+        <empFullyDrains>false</empFullyDrains>
+        <blocksMelee>true</blocksMelee>
+        <blocksShieldPenetrating>true</blocksShieldPenetrating>
+        <shieldPenetratingDamageDefs>
+        </shieldPenetratingDamageDefs>
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+        <blocksRangedWeapons>true</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>
@@ -116,7 +123,7 @@
       <WorkToMake>90000</WorkToMake>
       <Flammability>0.4</Flammability>
       <EnergyShieldRechargeRate>4.00</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>10.00</EnergyShieldEnergyMax>
+      <EnergyShieldEnergyMax>16.00</EnergyShieldEnergyMax>
       <EquipDelay>2</EquipDelay>
     </statBases>
     <thingSetMakerTags>
@@ -185,8 +192,15 @@
       </options>
     </colorGenerator>
     <comps>
-      <li Class="CompProperties_Shield">
-        <blocksRangedWeapons>false</blocksRangedWeapons>
+      <li Class="Astrallium.CompProperties_AstralShield">
+        <blocksEMP>true</blocksEMP>
+        <empFullyDrains>false</empFullyDrains>
+        <blocksMelee>true</blocksMelee>
+        <blocksShieldPenetrating>true</blocksShieldPenetrating>
+        <shieldPenetratingDamageDefs>
+        </shieldPenetratingDamageDefs>
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+        <blocksRangedWeapons>true</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>
@@ -210,20 +224,22 @@
     <techLevel>Spacer</techLevel>
     <statBases>
       <Mass>3</Mass>
-      <WorkToMake>120000</WorkToMake>
+      <WorkToMake>300000</WorkToMake>
       <Flammability>0.4</Flammability>
-      <EnergyShieldRechargeRate>6.00</EnergyShieldRechargeRate>
-      <EnergyShieldEnergyMax>16.00</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>16.00</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>64.00</EnergyShieldEnergyMax>
       <EquipDelay>2</EquipDelay>
     </statBases>
     <thingSetMakerTags>
       <li>RewardStandardQualitySuper</li>
     </thingSetMakerTags>
     <costList>
-      <ComponentSpacer>30</ComponentSpacer>
-      <ComponentIndustrial>100</ComponentIndustrial>
-      <Steel>12000</Steel>
-      <Plasteel>3600</Plasteel>
+      <ComponentSpacer>64</ComponentSpacer>
+      <ComponentIndustrial>640</ComponentIndustrial>
+      <Steel>64000</Steel>
+      <Plasteel>6400</Plasteel>
+      <Silver>12800</Silver>
+      <Gold>6400</Gold>
     </costList>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
@@ -282,8 +298,15 @@
       </options>
     </colorGenerator>
     <comps>
-      <li Class="CompProperties_Shield">
-        <blocksRangedWeapons>false</blocksRangedWeapons>
+      <li Class="Astrallium.CompProperties_AstralShield">
+        <blocksEMP>true</blocksEMP>
+        <empFullyDrains>false</empFullyDrains>
+        <blocksMelee>true</blocksMelee>
+        <blocksShieldPenetrating>true</blocksShieldPenetrating>
+        <shieldPenetratingDamageDefs>
+        </shieldPenetratingDamageDefs>
+        <energyLossPerDamage>0.033</energyLossPerDamage>
+        <blocksRangedWeapons>true</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>
