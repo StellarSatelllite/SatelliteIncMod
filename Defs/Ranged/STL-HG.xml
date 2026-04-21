@@ -64,6 +64,10 @@
         <defName>STL-HG_Mk1_dayo</defName>
         <label>STL-HG Mk.1</label>
         <description>Prototype handgun manufactured by Satellite Inc.</description>
+        <uiIconPath>Things/Item/Equipment/Weapon/STL-HG_Mk.1</uiIconPath>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <generateCommonality>1</generateCommonality>
+        <tickerType>Normal</tickerType>
         <graphicData>
         <texPath>Things/Item/Equipment/Weapon/STL-HG_Mk.1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
@@ -180,8 +184,8 @@
                     </li>
                 </modes>
                 <aiDistanceRules> <!--AIがどのモードを使うかを距離ごとに設定-->
-                    <li><maxDistance>6</maxDistance><modeIndex>2</modeIndex></li>
-                    <li><maxDistance>12</maxDistance><modeIndex>1</modeIndex></li>
+                    <li><maxDistance>10</maxDistance><modeIndex>2</modeIndex></li>
+                    <li><maxDistance>20</maxDistance><modeIndex>1</modeIndex></li>
                     <li><maxDistance>999</maxDistance><modeIndex>0</modeIndex></li>
                 </aiDistanceRules>
             </li>

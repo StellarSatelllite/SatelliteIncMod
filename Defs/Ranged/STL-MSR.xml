@@ -64,6 +64,10 @@
     <defName>STL-MSR_Mk1_dayo</defName>
     <label>STL-MSR Mk.1</label>
     <description>Prototype marksman rifle manufactured by Satellite Inc.</description>
+    <uiIconPath>Things/Item/Equipment/Weapon/STL-MSR_Mk.1</uiIconPath>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <generateCommonality>1</generateCommonality>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/STL-MSR_Mk.1</texPath>
       <graphicClass>Graphic_Single</graphicClass>

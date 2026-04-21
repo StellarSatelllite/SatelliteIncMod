@@ -96,7 +96,7 @@
         <shieldPenetratingDamageDefs>
         </shieldPenetratingDamageDefs>
         <energyLossPerDamage>0.033</energyLossPerDamage>
-        <blocksRangedWeapons>true</blocksRangedWeapons>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>
@@ -200,7 +200,7 @@
         <shieldPenetratingDamageDefs>
         </shieldPenetratingDamageDefs>
         <energyLossPerDamage>0.033</energyLossPerDamage>
-        <blocksRangedWeapons>true</blocksRangedWeapons>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>
@@ -306,7 +306,7 @@
         <shieldPenetratingDamageDefs>
         </shieldPenetratingDamageDefs>
         <energyLossPerDamage>0.033</energyLossPerDamage>
-        <blocksRangedWeapons>true</blocksRangedWeapons>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
       </li>
     </comps>
     <allowedArchonexusCount>1</allowedArchonexusCount>

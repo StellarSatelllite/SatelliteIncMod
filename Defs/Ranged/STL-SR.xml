@@ -64,6 +64,10 @@
     <defName>STL-SR_Mk1_dayo</defName>
     <label>STL-SR Mk.1</label>
     <description>Prototype sniper rifle manufactured by Satellite Inc.</description>
+    <uiIconPath>Things/Item/Equipment/Weapon/STL-SR_Mk.1</uiIconPath>
+    <soundInteract>Interact_ChargeLance</soundInteract>
+    <generateCommonality>1</generateCommonality>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Equipment/Weapon/STL-SR_Mk.1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
